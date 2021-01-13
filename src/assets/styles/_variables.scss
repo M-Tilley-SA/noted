@@ -1,0 +1,28 @@
+$primary-color: #2c86d2;
+$secondary-color: #ee8f42;
+$tertiary-color: rgba(0, 23, 255, 0.58);
+
+$button-primary-color:#3ba5ff;
+
+$todo-card-background-color: #f9f9f9;
+$todo-card-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+$text-primary-color: #333333;
+
+$sidebar-background-color: #eaeaea;
+
+$border-radius-default: 5px;
+
+$input-border-color: #ececec;
+
+$colors: (
+  $primary-color: $primary-color,
+  $secondary-color: $secondary-color,
+  $tertiary-color: $tertiary-color,
+  $button-primary-color: $button-primary-color,
+);
+
+$breakpoint-small: 'max-width: 560px';
+$breakpoint-medium: 'max-width: 767px';
+$breakpoint-large: 'max-width: 992px';
+$breakpoint-xl: 'max-width: 1200px';

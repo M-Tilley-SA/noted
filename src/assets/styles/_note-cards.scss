@@ -1,0 +1,150 @@
+.note-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.note-wrapper {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+}
+
+*[class^="note"] {
+  .note-single {
+    flex-basis: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    @media ($breakpoint-medium) {
+      flex-basis: 100%;
+      margin-right: 0%;
+      margin-bottom: 2%;
+    }
+  }
+  .note-inner {
+    border-radius: $border-radius-default;
+    background-color: $todo-card-background-color;
+    box-shadow: $todo-card-box-shadow;
+  }
+  .note-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: $primary-color;
+    border-radius: 5px 5px 0 0;
+    > * {
+      flex: 1 0 0%;
+    }
+    .note-title {
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 15px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+    &-actions {
+      flex-basis: auto;
+      flex-grow: 0;
+      button {
+        margin: 8px;
+        margin-left: 0px;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+  .note-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .note-item {
+      display: flex;
+      flex: 1 0 100%;
+      align-items: center;
+      font-size: 16px;
+      font-style: italic;
+      position: relative;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e8e8e8;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .note-description {
+      display: flex;
+      flex-grow: 1;
+      p {
+        margin: 0;
+      }
+    }
+    .note-actions {
+      display: flex;
+      flex-basis: 30px;
+      justify-content: flex-start;
+      svg {
+        color: $primary-color;
+        width: 12px;
+        height: 12px;
+        vertical-align: inherit;
+      }
+    }
+  }
+}
+
+button.item-status {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 1 1 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  svg {
+    color: $primary-color;
+    width: 12px;
+    height: 12px;
+    vertical-align: inherit;
+  }
+}
+.list-item-wrapper,
+.note-title-wrapper {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  margin-bottom: 15px;
+  button.item-status {
+    display: flex;
+    flex: 0 1 20px;
+    margin-right: 15px;
+  }
+  input {
+    flex: 1 0 auto;
+  }
+  .note-edit-actions {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: auto;
+    height: 16px;
+    svg {
+      color: #888;
+      opacity: 0.6;
+      margin-left: 5px;
+      height: 15px;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: $primary-color;
+        opacity: 1;
+      }
+    }
+  }
+}

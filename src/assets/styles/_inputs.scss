@@ -1,0 +1,37 @@
+input,
+select {
+  background-color: #efefef;
+  border: 1px solid $input-border-color;
+  color: $text-primary-color;
+  border-radius: $border-radius-default;
+  padding: 10px;
+  display: flex;
+  flex: 1 0 100%;
+  transition: padding 0.2s ease-in;
+  &:disabled {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    padding: 5px 10px 5px 0;
+    border-radius: 0;
+  }
+}
+label {
+  display: flex;
+  flex: 1 0 100%;
+  color: darken($text-primary-color, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  margin-bottom: 15px;
+}
+form > *:first-child {
+  margin-top:0;
+}

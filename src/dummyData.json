@@ -1,0 +1,42 @@
+[{
+  "notes":[
+    {
+      "title": "Test",
+      "description": "I need to finish this app lel",
+      "items": [
+        {
+          "title": "Freedom",
+          "completed": false
+        },
+        {
+          "title": "Drop it like its hot",
+          "completed": false
+        },
+        {
+          "title": "Fly as hell",
+          "completed": false
+        }
+      ],
+      "dateCreated": {
+        "timestamp":1610192221343,
+        "string": "Sat Jan 09 2021"
+      },
+      "todoCompleted": false
+    },
+    {
+      "title": "Etcetera",
+      "description": "We are making a long description here for some use case",
+      "items": [
+        {
+          "title": "Test",
+          "completed": false
+        }
+      ],
+      "dateCreated": {
+        "timestamp":1610192221343,
+        "string": "Sat Jan 09 2021"
+      },
+      "todoCompleted": false
+    }
+  ]
+}]

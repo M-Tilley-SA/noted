@@ -1,0 +1,8 @@
+.color,
+.bg {
+  @include color-modifiers;
+}
+
+.text {
+  @include text-alignment;
+}

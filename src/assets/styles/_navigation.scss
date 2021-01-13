@@ -1,0 +1,17 @@
+.primary-navigation {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color:#333;
+  h1 {
+    color:$primary-color;
+  }
+  &-links {
+    li {
+      display:block;
+      a {
+        color: #333;
+      }
+    }
+  }
+}
